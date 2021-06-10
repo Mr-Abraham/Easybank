@@ -361,7 +361,7 @@ margin: .91em 0;
      width: 38vw;
      transform: scale(1.56);
      z-index: -1;
-     background: url(/images/bg-intro-desktop.svg);
+     background: url(./images/bg-intro-desktop.svg);
      background-size: cover;
  }
  .info-content{
