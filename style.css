@@ -17,12 +17,12 @@ body{
 .switch-btn{
     width: 35px;
     height: 18px;
-    background: url(/images/icon-hamburger.svg);
+    background: url(./images/icon-hamburger.svg);
     background-size: cover;
     transition: all 200ms ease-in-out;
 }
 .switch-btn.close{
-    background: url(/images/icon-close.svg);
+    background: url(./images/icon-close.svg);
     background-size: cover;
     background-position: center;
     transform: rotate(90deg);
@@ -75,7 +75,7 @@ img{
 header{
     display: flex;
     flex-direction: column-reverse;
-    background: url(/images/bg-intro-desktop.svg);
+    background: url(./images/bg-intro-desktop.svg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
