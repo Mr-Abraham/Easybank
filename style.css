@@ -1,0 +1,550 @@
+ 
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Public Sans', sans-serif;
+}
+body{
+    font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.switch-btn{
+    width: 35px;
+    height: 18px;
+    background: url(/images/icon-hamburger.svg);
+    background-size: cover;
+    transition: all 200ms ease-in-out;
+}
+.switch-btn.close{
+    background: url(/images/icon-close.svg);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(90deg);
+}
+img{
+    max-width: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    padding: 1.7em;
+}
+.navigation{
+    display: none;
+    /* This will make the list invisible */
+}
+/* Below code will show the content when user will click the menu button as js scrypt will run */
+.navigation.close{
+    box-shadow: 0 0  5px #ccc;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    /* Above code will make the list cemtered */
+    border-radius: 0px 0px 25px 25px;
+    margin: 0 1em;
+}
+.navigation ul{
+    list-style: none;
+}
+.navigation.close ul li{
+    margin-bottom: .85em;
+}
+.navigation ul li a{
+   text-decoration: none;
+   color: hsl(212, 25%, 29%);
+   font-size: 1.3em;
+   font-weight: 700;
+}
+.navigation ul li a:hover{
+    /* color: black; */
+    /* color: hsl(192, 70%, 51%); */
+    color: hsl(136, 65%, 41%);
+}
+.request-invite{
+    display: none;
+}
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    background: url(/images/bg-intro-desktop.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-x: -90px;
+    background-position-y: -290px;
+}
+header img{
+    padding: .5em;
+}
+.info-content{
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
+}
+.info-content p{
+    color: hsl(233, 8%, 62%);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.info-content h1{
+color: hsl(233, 26%, 24%);
+font-size: 1.52em;
+
+}
+.info-content h1,
+.info-content p{
+    width: 80vw;
+    left: 50%;
+    align-items: center;
+    transform: translateX(-50%);
+    position: relative;
+    padding: .5em;
+    line-height: 1.4;
+}
+
+.info-content a{
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient( to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    width: 45vw;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    border-radius: 100px;
+    padding: .65em;
+    font-weight: 700;
+    font-family: 'Public Sans', sans-serif;
+    
+}
+main{
+    background: hsl(220, 16%, 96%);
+}
+.header-section{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 1.51em;
+}
+
+.header-section h2{
+    color: hsl(233, 26%, 24%);
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.header-section p{
+    color: hsl(233, 8%, 62%);
+    font-weight: 400;
+    font-size: .95em;
+
+}
+.boxes{
+    display: fle;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1.5em;
+    margin: .51em 0;
+}
+.box p{
+    color: hsl(233, 8%, 62%);
+    font-size: .87em;
+}
+.box h3{
+color:  hsl(233, 26%, 24%);
+font-weight: 700;
+font-size: 1.3em;
+}
+.articles{
+    padding: .8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+.articles h3{
+    font-size: 2em;
+    color: hsl(212, 30%, 38%);
+}
+.aricle{
+    margin: 2.5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aricle div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: .51em;
+    margin-top: 1em;
+    padding: 1em;
+}
+.aricle p{
+    color: hsl(233, 8%, 62%);
+    font-size: .9em;
+    line-height: 1.5;
+}
+.aricle h4{
+    color:hsl(233, 26%, 24%) ;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.aricle .author{
+    color: hsl(233, 8%, 62%);
+    font-size: .75em;
+}
+footer{
+    padding: 1em;
+    background: hsl(233, 26%, 24%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em;
+    background: transparent;
+    filter: invert(1);
+}
+.social{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .85em;
+}
+.social img{
+    margin: 0 .51em;
+}
+.footer-navigation{
+    text-align: center;
+}
+.footer-navigation li{
+list-style: none;
+margin: .91em 0;
+}
+.footer-navigation li a{
+    text-decoration: none;
+    color: rgb(224, 221, 215);
+    font-weight: 700;
+}
+.invite{
+    text-align: center;
+    padding: 1em;
+}
+.invite a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    background: linear-gradient( to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    padding: .75em 1.65em;
+    border-radius: 100px;
+    font-weight: 700;
+}
+.footerPara{
+    padding: 1em 0;
+}
+.footerPara p{
+    color: hsl(233, 8%, 62%);
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (min-width:780px){
+    
+    .switch-btn{
+        display: none;
+    }
+    .navigation{
+        display: block;
+    }
+    .request-invite{
+        display: block;
+    }
+ .main-nav{
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     padding: 1.7em 0;
+     box-shadow: 0 0 5px #ddd;
+     z-index: 999;
+     position: relative;
+     background: #fff;
+ } 
+ .navigation ul li{
+     display: inline-block;
+     margin: 0 .7em;
+ }  
+ .logo{
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+ .navigation ul li a{
+     color: hsl(213, 8%, 72%);
+     font-weight: 400;
+     font-size: .91em;
+     padding: .2em;
+     position: relative;
+     transition: 350ms ease-in-out;
+     font-family:Arial, Helvetica, sans-serif;
+ }
+
+ .navigation ul li a:hover::after{
+   content: '';
+   background: mediumseagreen;
+   position: absolute;
+   top: 44.5px;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   height: 5px;
+   transition: all 350ms ease;
+  }
+  .navigation ul li a:hover{
+      color: black;
+  }
+
+ .request-invite a{
+    color: #fff;
+    text-decoration: none;
+    font-size: .891em;
+    background: linear-gradient( to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    padding: .7em 1.65em;
+    border-radius: 100px;
+    font-weight: 700;
+ }
+ img{
+     max-width: 100%;
+ }
+ .header-image{
+     width: 38vw;
+     transform: scale(1.56);
+     z-index: -1;
+     background: url(/images/bg-intro-desktop.svg);
+     background-size: cover;
+ }
+ .info-content{
+     width: 60vw;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding: 1em;
+     gap: 1em;
+ }
+ header{
+     background: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 1em;
+ }
+    .info-content h1,
+.info-content p{
+    width: 45vw;
+    left: 0;
+    transform: translateX(0);
+    align-items: flex-start;
+    padding: .5em;
+    line-height: 1.5;
+    text-align: left;
+    /* as for the mobile view as i have given the alignment to be centered so i need to align left now */
+    font-weight: 400;
+    box-sizing: border-box;
+    
+}
+.info-content h1{
+    color: hsl(233, 26%, 24%);
+    font-size: 3.5em;
+    padding: .2em  0;
+    }
+
+    .info-content p{
+        color: hsl(233, 8%, 62%);
+        font-size: 1.5em;
+        font-weight: 400;
+        padding: .21em 0;
+    }
+    
+
+.info-content a{
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient( to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    width: 15vw;
+    left: 0;
+    position: relative;
+    transform: translateX(0);
+    border-radius: 100px;
+    padding: .75em .5em;
+    font-weight: 700;
+    font-family: 'Public Sans', sans-serif;
+   font-size: .85em; 
+margin-top: 1em;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+}
+.header-section{
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 1.5em;
+    align-items: flex-start;
+    line-height: 1.5;
+    margin-top: 1.51em;
+}
+
+.header-section h2{
+    color: hsl(233, 26%, 24%);
+    width: 70%;
+    left: 0;
+    transform: translateX(0);
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.header-section p{
+    color: hsl(228, 3%, 38%);
+    font-weight: 400;
+    font-size: 1.18em;
+    width: 70%;
+} 
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5em;
+    padding: 1.5em;
+    margin: .51em 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.box h3{
+    font-size: 1.2em;
+}
+.box p{
+    font-size: 1.1em;
+}
+
+.wrapper{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap:1.2em ;
+}
+
+.aricle > div{
+gap: 1em;
+}
+
+.aricle:first-child img { 
+    gap: 1px;
+    padding: 0;
+    width: 90%;
+ }
+
+ .aricle p{
+    color: hsl(233, 8%, 62%);
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+.aricle h4{
+    color:hsl(233, 26%, 24%) ;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.aricle .author{
+    color: hsl(233, 8%, 62%);
+    font-size: .89em;
+}
+ .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8em;
+} 
+
+.footer-navigation{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5em;
+}
+footer{
+    padding: 1em;
+}
+
+.footer-navigation li a:hover{
+    color: rgb(73, 224, 141);
+}
+.social img{
+    filter: invert(1);
+}
+.social img:hover{
+    filter: invert(0);
+    cursor: pointer;
+}
+.invite{
+    text-align: center;
+    padding: 0;
+}
+
+}
