@@ -546,5 +546,17 @@ footer{
     text-align: center;
     padding: 0;
 }
+ .footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: .52em;
+    align-items: center;
+    padding: 2em;
+}
+.footerPara p{
+    position: relative;
+    top: 1em;
+}
+
 
 }
