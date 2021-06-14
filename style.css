@@ -22,7 +22,7 @@ body{
     transition: all 200ms ease-in-out;
 }
 .switch-btn.close{
-    background: url(./images/icon-close.svg);
+    background: #357B83 url(./images/icon-close.svg);
     background-size: cover;
     background-position: center;
     transform: rotate(90deg);
